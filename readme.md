@@ -21,4 +21,9 @@ you can find the way from this doc [LINK](https://laravel-news.com/sending-recei
 ## how can it be better 
 
 we can put a **input**box and send a custom sms every time 
- *** 
+ ***
+ 
+ 
+ ## (Non White-listed Destination - rejected)ERROR
+ this error will show as like i said because the api is **free**
+ <br> but it send the sms to my phone NO.

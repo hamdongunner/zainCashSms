@@ -27,11 +27,6 @@
             <h1 class="text-center">Sending a birthday sms to the customers</h1>
             <br><br><br>
             <div>
-                @if($reserves != null)
-                    @foreach($reserves as $reserve)
-                        {{ $reserve }}
-                    @endforeach
-                @endif
             </div>
 
             <form action="/sms" method="get">

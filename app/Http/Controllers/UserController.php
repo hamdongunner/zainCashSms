@@ -12,8 +12,7 @@ class UserController extends Controller
 {
     public function getUsers()
     {
-        $reserves= ['send'];
-        return View('welcome',compact('reserves'));
+        return View('welcome');
     }
 
     public function sendSms()
@@ -24,6 +23,7 @@ class UserController extends Controller
         $month = $dt->month;
         $users = User::all();
         $reserves[] = [];
+
         foreach ($users as $user) {
             $du = Carbon::parse($user->birthday);
             $userD = $du->day;
@@ -59,7 +59,7 @@ class UserController extends Controller
                 }
             }
         }
-        return $reserves;
+//        return $reserves;    to find who get the sms
         return View('welcome');
     }
 }
