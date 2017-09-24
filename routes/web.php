@@ -14,7 +14,9 @@
 
 Route::get('/','UserController@getUsers');
 
-Route::get('/sms', function () {
+Route::get('/sms','UserController@sendSms');
+
+Route::get('/smsssss', function () {
     Nexmo::message()->send([
         'to' => '9647819898919',
         'from' => '9647819898919',
